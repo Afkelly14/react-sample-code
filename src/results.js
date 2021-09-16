@@ -1,10 +1,10 @@
 import React from "react";
 
-function Results({ fname = "test"}) {
+function Results({ fname, lname}) {
     
   return (
     <div className="idmeresults">
-      <p>Hi, {fname}. Thank you for your service!</p>
+      <p>Hi, {fname} {lname}. Thank you for your service!</p>
     </div>
   );
 }

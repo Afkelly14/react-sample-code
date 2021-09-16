@@ -4,9 +4,17 @@ import Button from "./button";
 import Results from "./results";
 
 function IDme() {
-  const [payload, setPayload] = useState({'attributes':[]});
+  const [payload, setPayload] = useState(null);
   const token = window.location.hash.split("&")[0].match(/[^#access_token=]\w+/);
-  const fname = payload.attributes.find(element => element.handle = "fname").value
+  
+  const findAttributeValue = (attr) => {
+    return payload ? payload.attributes.find(element => element.handle == attr).value : null
+  } 
+  
+  const fname = findAttributeValue('fname')
+  const lname = findAttributeValue('lname')
+  console.log(payload)
+
 
   useEffect(() => {
     if (token) {
@@ -26,7 +34,7 @@ function IDme() {
   }//if
 }, [])//useEffect
 
-  const view = payload ? <Results fname={fname} /> : <Button />;
+  const view = payload ? <Results fname={fname} lname={lname} /> : <Button />;
 
   return <div>{view}</div>; //return
 } //component
