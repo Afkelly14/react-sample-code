@@ -1,26 +1,12 @@
-import React from 'react';
-import { render } from 'react-dom';
-import './index.css';
-import App from './App';
-
-
-
-
+import React from "react";
+import { render } from "react-dom";
+import "./index.css";
+import App from "./App";
 
 const Testing = () => (
-  
-   
-      <div>
-        <App />
-       
-      
-      </div>
-   
+  <div>
+    <App />
+  </div>
+);
 
-)
-
-render(<Testing />, document.getElementById('root'))
-
-
-
-
+render(<Testing />, document.getElementById("root"));
