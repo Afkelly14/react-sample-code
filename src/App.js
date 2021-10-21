@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Button from "./button";
 import Results from "./results";
+import Fail from "./fail";
+import './App.css';
 
 function IDme() {
   const [payload, setPayload] = useState(null);
@@ -34,7 +36,7 @@ function IDme() {
   }//if
 }, [])//useEffect
 
-  const view = payload ? <Results fname={fname} lname={lname} /> : <Button />;
+  const view = payload ? <Results fname={fname} lname={lname} /> : <Button /> 
 
   return <div>{view}</div>; //return
 } //component
