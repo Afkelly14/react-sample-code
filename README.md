@@ -1,6 +1,6 @@
 # React Sample Code for an ID.me integration
 
-# This sample code is to help partners integrate the ID.me verification tool onto their React application
+#### This sample code is to help partners integrate the ID.me verification tool onto their React application
 
 ## This project is built with
     - React
@@ -14,6 +14,7 @@ To run this project, navigate to the project directory and run:
 
 Continue through the below steps to see a Successful Verification or Unsuccessful Verification
 
+
 ### Steps for a successful verification
 
 1. Click the 'Verify With ID.me' button
@@ -21,6 +22,7 @@ Continue through the below steps to see a Successful Verification or Unsuccessfu
 3. Allow the release of your data for a Successful Verification
 4. Check the console for user data
 
+__________________________________________________________________________________________________
 
 ### Steps for an unsuccessful verification
 
