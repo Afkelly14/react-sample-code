@@ -34,9 +34,9 @@ ________________________________________________________________________________
 
 ### Sample Error Messages
 
-Invalid Request
-Invalid Client
-Invalid Redirect URI
-Access Denied
-Unsupported Response Type
-Invalid Scope
+- Invalid Request
+- Invalid Client
+- Invalid Redirect URI
+- Access Denied
+- Unsupported Response Type
+- Invalid Scope
